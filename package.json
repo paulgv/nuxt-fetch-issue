@@ -11,8 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "npm:nuxt-edge",
-    "nuxt-i18n": "^5.1.1"
+    "nuxt": "npm:nuxt-edge"
   },
   "devDependencies": {
     "cross-env": "^5.0.1"

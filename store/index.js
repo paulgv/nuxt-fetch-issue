@@ -12,7 +12,7 @@ const createStore = () => {
     },
     actions: {
       nuxtServerInit ({ commit }) {
-        console.log('nuxtServerInit')
+        // Mutating from nuxtServerInit does not work either
         commit('simpleModule/mutate')
       }
     }
