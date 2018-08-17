@@ -29,6 +29,10 @@
       </div>
 
       <hr>
+
+      <div>
+        However, main project's state is mutated properly: {{ counter }}
+      </div>
     </div>
   </section>
 </template>
@@ -50,7 +54,8 @@ export default {
     // No problem if you navigate to another page then back to this one
   },
   computed: {
-    ...mapState('simpleModule', ['mutateMe'])
+    ...mapState('simpleModule', ['mutateMe']),
+    ...mapState(['counter'])
   },
   methods: {
     onClick () {
